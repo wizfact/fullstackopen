@@ -67,7 +67,7 @@ const App = () => {
     });
   }, [persons]);
 
-  const newContact = (event) => {
+  const newContact = (event) => {  
     event.preventDefault();
     const duplicate = persons.filter((person) => person.name === newName);
     const newPerson = {
